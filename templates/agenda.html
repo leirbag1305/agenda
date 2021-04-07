@@ -4,8 +4,15 @@
     <h2>Agendamentos</h2>
 
     <u1 style="font-size: 18px">
-    {% for evento in eventos %}
-        <li> {{evento.titulo}} - {{evento.get_data_evento}}</li>
-    {% endfor %}
+        {% for evento in eventos %}
+            <li> {{evento.titulo}} - {{evento.get_data_evento}} - {{evento.local}} </li>
+        {% endfor %}
     </u1>
+
+    <br>
+
+    <a href="evento/">
+        <button type="button" >Nova Tarefa</button>
+    </a>
+
 {% endblock %}
